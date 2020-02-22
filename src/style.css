@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+html, body, #websiteContainer {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+} 
+
+.layout {
+    display: flex;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.horizontal {
+    flex-direction: row;
+}
+
+.right {
+    align-self: flex-end;
+}
+
+.flex {
+    flex: 1;
+}
+
+.big {
+    flex: 2;
+}
+
+.center {
+    align-items: center;
+}
+
+.justify {
+    justify-content: center;
+}
+
+.start {
+    align-items: flex-start;
+}
+
+.stretch {
+    align-self: stretch;
+}
+
+#grid {
+    display: grid;
+    font-size: 25px;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    background-color: white; 
+    padding: 5px; 
+    text-align: center;
+    overflow: scroll; 
+    height: 100%; 
+    }
+
+.numberContainer {
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.divisionRight {
+    border-right: 2px solid black;
+}
+
+.divisionLeft {
+    border-left: 2px solid black;
+}
+
+.divisionTop {
+    border-top: 2px solid black;
+}
+
+.divisionBottom {
+    border-bottom: 2px solid black;
+}
+
+.numberInput {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    width: 30px;
+}
