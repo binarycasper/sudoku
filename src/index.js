@@ -6,17 +6,28 @@ function generateGrid() {
     var randomNumber;
 
     var numbers = new Array();
+
+    var numericValues = new Array();
+
+    var numbersPerLine = new Array();
     
+    var counter = 0; 
+
     for(i = 0; i < 81; i++) {
         var randomBoolean = Math.random() >= 0.5;
 
-        if(randomBoolean) {
-            randomNumber = Math.floor(Math.random() * 9) + 1; 
-            numbers.push(randomNumber)
+        if(randomBoolean && counter <= 27) {
+            if (i > 0 && numbers[i - 1] != '<input type="text" class="numberInput">') {
+                numbers.push('<input type="text" class="numberInput">');
+
+            } else {
+                randomNumber = Math.floor(Math.random() * 9) + 1; 
+                numbers.push(randomNumber);
+                counter++;
+            }
 
         } else {
             numbers.push('<input type="text" class="numberInput">');
-
         }
 
         var begin = '<div class="numberContainer';
